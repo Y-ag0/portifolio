@@ -1,30 +1,145 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+U:wght@100..900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
 }
 :root{
-    --cor1: #000000;
-    --cor2: #7C7C7C;
+    --cor1: #0d1117;
+    --cor2: #e6edf3;
     --cor3: #090311;
-    --cor4: #F4F4F9;
-    --cor5: #FFFFFF;
-    --cor6: #F40000;
+    --cor4: #8b949e;
+    --cor5: #000000;
+    --cor6: #f40000;
 }
 body{
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor50));
+    background-image: linear-gradient(to top, var(--cor3));
     background-attachment: fixed;
 }
 header{
     border-style: solid;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    border-width: 0px;
+
     
+}
+main{
+    max-width: 750px;
+    padding: 5px;
+    margin: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    height: auto;
+    background-image: linear-gradient(to bottom, var(--cor2));
+    border-width: 2px;
     
 }
 nav > a{
     text-decoration: none;
+    transition: 1s;
+    padding: 5px;
+    max-width: 30px;
+
+    
+    
+
+}
+nav > a:visited{
+    color: var(--cor6);
+}
+.navegacao:hover{
+    background-color: var(--cor1);
+    transition: 1s;
+    border-radius: 15px;
+    margin: 20px;
+
+    
     
 }
-a:hover{
-    background-color: var(--cor3);
+h1{
+    text-align: center;
+    font-family: "Caacupe One";
+    font-weight: 100;
+    font-size: 45px;
+    padding: 10px;
     
+}
+footer{
+    border-style: solid;
+    background-color: white;
+    padding: 20px;
+}
+.contato{
+    text-align: center;
+    text-decoration: underline var(--cor5);
+
+}
+.listas{
+    columns: 1;
+    margin: 20px;
+    padding: 20px;
+}
+.principais{
+    color: var(--cor3);
+    margin: 15px;
+    text-decoration: underline;
+}
+.principais:hover{
+    background-color: var(--cor3);
+    transition: 0.5s;
+    color: white;
+    border-radius: 15px;
+    text-indent: 20px;
+}
+.h2{
+    text-align: center;
+    background-color: var(--cor5);
+    color: var(--cor6);
+    border-radius: 15px;
+}
+.sobre{
+    text-align: center;
+    background-image: linear-gradient(to right, var(--cor5));
+    color: var(--cor6);
+    border-radius: 15px;
+}
+.paragrafo{
+    text-indent: 20px;
+    margin: 9px;
+    padding: 5px;
+}
+.portifolio{
+    text-indent: 20px;
+    margin-top: 12px;
+    border-style: solid;
+    border-radius: 15px;
+    max-width: 300px;
+    color: var(--cor3);
+    border: 10px;
+}
+.portifolio:hover{
+    background-color: black;
+    transition: 0.5s;
+    color: var(--cor6);
+    text-indent: 15px;
+}
+.nome{
+    margin:15px;
+    font-family: 'Playfair Display', 'serif';
+}
+.estudante{
+    margin:15px;
+    font-family: 'M PLUS U', 'Sans-serif';
+}
+q{
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 0.9em;
+    text-align: center;
+}
+.links{
+    text-decoration: none;
 }
